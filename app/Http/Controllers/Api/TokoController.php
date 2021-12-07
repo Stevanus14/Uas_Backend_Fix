@@ -10,12 +10,8 @@ use App\Models\Toko;
 
 class TokoController extends Controller
 {
-<<<<<<< HEAD
     public function index() 
     {
-=======
-    public function index() {
->>>>>>> 30f5cc7276cdd86b8ac43e9e59e30aef85641852
         $tokos = Toko::all();
 
         if(count($tokos)>0) {

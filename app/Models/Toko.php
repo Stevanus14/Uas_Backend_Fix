@@ -9,10 +9,6 @@ use Carbon\Carbon;
 class Toko extends Model
 {
     use HasFactory;
-<<<<<<< HEAD
-=======
-
->>>>>>> 30f5cc7276cdd86b8ac43e9e59e30aef85641852
     protected $fillable = [
         'nama_toko', 'kode_toko', 'alamat_toko'
     ];

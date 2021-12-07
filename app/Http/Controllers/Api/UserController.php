@@ -52,7 +52,7 @@ class UserController extends Controller
             'email' => 'required|unique:users',
             'password' => 'required|min:8',
             'alamat' => 'required',
-            'no_telp' => 'required|min:12|numeric'
+            'no_telp' => 'required|numeric|regex:/(08)[0-9]{0,11}/'
             
         ]);
         
@@ -108,7 +108,7 @@ class UserController extends Controller
             'email' => ['required', Rule::unique('users')->ignore($user)],
             'password' => 'required|min:8',
             'alamat' => 'required',
-            'no_telp' => 'required|min:12|numeric',
+            'no_telp' => 'required|numeric|regex:/(08)[0-9]{0,11}/',
             
         ]);
 
