@@ -51,7 +51,7 @@ class KaryawanController extends Controller
             'nama_karyawan' => 'required',
             'alamat_karyawan' => 'required',
             'gaji' => 'required|numeric',
-            'nohp_karyawan' => 'required|numeric|regex:/(08)[0-9]{0,11}/'
+            'nohp_karyawan' => 'required|numeric|regex:/(08)/|digits_between:8,13'
         ]);
         
         if($validate->fails())
@@ -103,7 +103,7 @@ class KaryawanController extends Controller
             'nama_karyawan' => 'required',
             'alamat_karyawan' => 'required',
             'gaji' => 'required|numeric',
-            'nohp_karyawan' => 'required|numeric|regex:/(08)[0-9]{0,11}/'
+            'nohp_karyawan' => 'required|numeric|regex:/(08)/|digits_between:8,13'
         ]);
 
         if($validate->fails())

@@ -45,4 +45,6 @@ Route::group(['middleware' => 'auth:api'], function() {
     Route::post('karyawan', 'Api\KaryawanController@store');
     Route::put('karyawan/{id}', 'Api\KaryawanController@update');
     Route::delete('karyawan/{id}', 'Api\KaryawanController@destroy');
+
+    Route::put('verify/{id}', 'Api\AuthController@verify');
 });
