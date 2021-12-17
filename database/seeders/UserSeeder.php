@@ -16,6 +16,7 @@ class UserSeeder extends Seeder
     public function run()
     {
         DB::table('users')->insert([
+<<<<<<< HEAD
             'name' => 'admin01',
             'email' => 'admin01@gmail.com',
             'email_verified_at' => Carbon::now(),
@@ -23,6 +24,13 @@ class UserSeeder extends Seeder
             'alamat' => 'admin01-alamat',
             'no_telp' => '0857913610000',
             'remember_token' => '1',
+=======
+            'name' => 'Stevanus Tetuko Kristianto',
+            'email' => '10167@students.uajy.ac.id',
+            'password' => '$2b$10$cLi8hqE.3e0p1BXuQUtSI.06x55XyRk5CfwyABawEVP3CuJ7Msbm6',
+            'alamat' => 'Surakarta',
+            'no_telp' => '081254764903',
+>>>>>>> ab1b55d0aaeb56aef94b337ce52fe8f615f0f896
             'created_at' => Carbon::now(),
             'updated_at' => Carbon::now()
         ]);

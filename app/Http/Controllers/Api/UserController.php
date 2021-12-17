@@ -120,6 +120,11 @@ class UserController extends Controller
         $user->password=bcrypt($request->password);
         $user->alamat=$updateData['alamat'];
         $user->no_telp=$updateData['no_telp'];
+<<<<<<< HEAD
+=======
+        
+    
+>>>>>>> ab1b55d0aaeb56aef94b337ce52fe8f615f0f896
 
         if($user->save()) {
             return response([
